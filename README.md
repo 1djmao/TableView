@@ -23,7 +23,7 @@ module 中 build.gradle 文件中添加（最新版本号查看 releases）:
 
 ```
 dependencies {
-	compile 'com.github.ChargeMap:android-tableView:LAST_RELEASE'
+	compile 'com.github.1djmao:TableView:LAST_RELEASE'
 }
 ```
 ## 布局文件
@@ -36,7 +36,6 @@ dependencies {
         app:tv_data_borders_color="@color/md_grey_500" <!--  Borders color for data cells -->
         app:tv_header_background_color="@color/md_grey_300" <!--  Background color for header cells -->
         app:tv_header_borders_color="@color/md_grey_500" <!--  Borders color for header cells -->
-        app:tv_headersOnTop="false" <!--  Table view header is the first row ? If false, headers are shown as the first column -->
         app:tv_scrollingEnabled="false" <!-- Scrolling ? -->
         app:tv_padding="8" /> <!--  padding -->
 ```
