@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="TableView">
+        <attr name="tv_header_borders_color" format="color" localization="suggested" />
+        <attr name="tv_header_background_color" format="color" localization="suggested" />
+        <attr name="tv_data_borders_color" format="color" localization="suggested" />
+        <attr name="tv_data_background_color" format="color" localization="suggested" />
+        <attr name="tv_radius" format="integer" localization="suggested" />
+        <attr name="tv_padding" format="integer" localization="suggested" />
+        <attr name="tv_headersOnTop" format="boolean" localization="suggested" />
+        <attr name="tv_scrollingEnabled" format="boolean" localization="suggested" />
+    </declare-styleable>
+</resources>
