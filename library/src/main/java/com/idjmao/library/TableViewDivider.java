@@ -6,7 +6,7 @@ import android.support.v7.widget.RecyclerView;
 import android.util.DisplayMetrics;
 import android.view.View;
 import android.widget.TextView;
-
+import android.graphics.Color;
 /**
  * Created by rbertin on 31/10/2016.
  */
@@ -49,7 +49,10 @@ public class TableViewDivider extends RecyclerView.ItemDecoration {
             title.setBackgroundColor(tableView.tv_header_background_color);
         } else {
             container.setBackgroundColor(tableView.tv_data_borders_color);
-            title.setBackgroundColor(tableView.tv_data_background_color);
+            if(position%2==1)
+                title.setBackgroundColor(tableView.tv_data_background_color);
+            else 
+                title.setBackgroundColor(Color.WHITE);
         }
 
         title.setPadding(padding, padding, padding, padding);
