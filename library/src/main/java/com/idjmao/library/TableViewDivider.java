@@ -2,10 +2,11 @@ package com.idjmao.library;
 
 import android.content.res.Resources;
 import android.graphics.Rect;
-import android.support.v7.widget.RecyclerView;
 import android.util.DisplayMetrics;
 import android.view.View;
 import android.widget.TextView;
+
+import androidx.recyclerview.widget.RecyclerView;
 
 /**
  * Created by rbertin on 31/10/2016.

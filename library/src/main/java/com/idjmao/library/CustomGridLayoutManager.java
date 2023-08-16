@@ -1,7 +1,8 @@
 package com.idjmao.library;
 
 import android.content.Context;
-import android.support.v7.widget.GridLayoutManager;
+
+import androidx.recyclerview.widget.GridLayoutManager;
 
 /**
  * Created by rbertin on 31/10/2016.

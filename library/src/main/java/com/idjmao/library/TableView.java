@@ -2,9 +2,9 @@ package com.idjmao.library;
 
 import android.content.Context;
 import android.content.res.TypedArray;
-import android.support.v4.content.ContextCompat;
-import android.support.v7.widget.RecyclerView;
 import android.util.AttributeSet;
+
+import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -44,11 +44,11 @@ public class TableView extends RecyclerView {
 
         TypedArray a = context.obtainStyledAttributes(attrs, R.styleable.TableView);
 
-        tv_header_borders_color = a.getColor(R.styleable.TableView_tv_header_borders_color, ContextCompat.getColor(context, R.color.md_grey_500));
-        tv_header_background_color = a.getColor(R.styleable.TableView_tv_header_background_color, ContextCompat.getColor(context, R.color.md_grey_300));
+        tv_header_borders_color = a.getColor(R.styleable.TableView_tv_header_borders_color, getContext().getColor(R.color.md_grey_500));
+        tv_header_background_color = a.getColor(R.styleable.TableView_tv_header_background_color, context.getColor( R.color.md_grey_300));
 
-        tv_data_borders_color = a.getColor(R.styleable.TableView_tv_data_borders_color, ContextCompat.getColor(context, R.color.md_grey_500));
-        tv_data_background_color = a.getColor(R.styleable.TableView_tv_data_background_color, ContextCompat.getColor(context, R.color.md_white_1000));
+        tv_data_borders_color = a.getColor(R.styleable.TableView_tv_data_borders_color, context.getColor( R.color.md_grey_500));
+        tv_data_background_color = a.getColor(R.styleable.TableView_tv_data_background_color, context.getColor(R.color.md_white_1000));
 
         tv_radius = a.getInteger(R.styleable.TableView_tv_radius, 0);
 
