@@ -1,5 +1,19 @@
 plugins {
     id 'com.android.library'
+    id 'maven-publish'
+}
+
+afterEvaluate {
+    publishing {
+        publications {
+            release(MavenPublication){
+                from components.release
+                groupId = 'com.github.1djmao'
+                artifactId = 'release'
+                version = '2.0.0'
+            }
+        }
+    }
 }
 
 android {
@@ -25,6 +39,8 @@ android {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
     }
+
+
 }
 
 dependencies {
